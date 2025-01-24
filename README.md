@@ -8,10 +8,6 @@
 
 *Transform your Debian/Kali system with an anime-inspired aesthetic. Featuring Tokyo Night theme, custom terminal configurations, and a sleek dock setup. Turn your desktop into a beautiful and functional workspace with just one script.* 🎋
 
-[Features](#features) • [Installation](#installation) • [Screenshots](#screenshots) • [Themes](#included-themes) • [Customization](#customization)
-
-![Preview Image Placeholder](preview.png)
-
 </div>
 
 ## ✨ Features
