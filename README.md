@@ -35,24 +35,53 @@
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/tokyo-debian-rice.git
-cd tokyo-debian-rice
+git clone https://github.com/sproffes/AnimeDeskRice.git
+cd AnimeDeskRice
 ```
+Or go to releases if you only want to download Terminal or Desktop setups.
 
-2. Choose your setup:
+2. Choose your rice for terminal or desktop:
+
+### Terminal
+
+#### Kali
 ```bash
-# For GNOME
-chmod +x gnome-setup.sh
-sudo ./gnome-setup.sh
-
-# For MATE
-chmod +x mate-setup.sh
-sudo ./mate-setup.sh
-
-# For terminal customization
-chmod +x terminal-debian.sh  # or terminal-kali.sh
-./terminal-debian.sh        # or ./terminal-kali.sh
+cd Terminal_Rice
+chmod +x ZSH_THEME_kali.sh
+./ZSH_THEME_kali.sh
 ```
+#### Debian / Ubuntu
+```bash
+cd Terminal_Rice
+chmod +x ZSH_THEME_debian-ubuntu.sh
+./ZSH_THEME_debian-ubuntu.sh
+```
+### Desktop
+
+It should work for debian based distros, but I only tested it on Kali and debian.
+
+1. Gnome environment
+```bash
+cd Desktop_Rice
+chmod +x Gnome_setup.sh
+./Gnome_setup.sh
+```
+2. Mate environment
+```bash
+cd Desktop_Rice
+chmod +x Mate_setup.sh
+./Mate_setup.sh
+```
+### Login manager
+
+By default, the gnome environment will install gdm3 as the login manager but it`s not enabled by default.
+
+If you want to enable it, you can do it by running the following command:
+```bash
+sudo systemctl enable gdm3
+sudo systemctl start gdm3
+```
+Then you can log out and log back in to enable the login manager.
 
 ## 🎨 Included Themes
 
@@ -71,8 +100,13 @@ You can modify the scripts to suit your preferences:
 
 ## 📸 Screenshots
 
-[Screenshots will be here]
+![Kali-Mate](/assets/kalimate.gif)
 
+![Kali-Gnome](/assets/kalignome.gif)
+
+![Debian-Gnome](/assets/debiangnome.gif)
+
+![ZSH](/assets/zshinstall.gif)
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
