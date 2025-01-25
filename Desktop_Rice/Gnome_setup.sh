@@ -9,7 +9,7 @@ sudo apt install -y gnome gdm3 gnome-shell gnome-shell-extensions gnome-tweaks d
 
 sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.themes
 sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.icons/{cursors,default}
-sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.icons/Sweet-Purple
+sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.icons/candy-icons
 sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.local/share/plank/themes
 sudo -u $REAL_USER mkdir -p ${WALLPAPER_DIR}
 sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.config/autostart
@@ -17,10 +17,10 @@ sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.config/plank/dock1
 
 cd "${SCRIPT_DIR}"
 tar xf M200.tar.gz -C ${REAL_HOME}/.icons/
-tar xf Sweet-Purple.tar.xz -C ${REAL_HOME}/.icons/
+tar xf candy-icons.tar.xz -C ${REAL_HOME}/.icons/
 ln -sf ${REAL_HOME}/.icons/M200/index.theme ${REAL_HOME}/.icons/default/index.theme
 sudo update-alternatives --install /usr/share/icons/default/index.theme x-cursor-theme ${REAL_HOME}/.icons/M200/index.theme 20
-chown -R $REAL_USER:$REAL_USER ${REAL_HOME}/.icons/{M200,Sweet-Purple,default}
+chown -R $REAL_USER:$REAL_USER ${REAL_HOME}/.icons/{M200,candy-icons,default}
 
 cd "${SCRIPT_DIR}"
 TMP_DIR=$(mktemp -d)
@@ -72,7 +72,7 @@ cat > ${REAL_HOME}/.config/autostart/theme-setup.sh << 'EOL'
 sleep 10
 gsettings set org.gnome.shell.extensions.user-theme name 'Tokyonight-Dark-BL-GS'
 gsettings set org.gnome.desktop.interface gtk-theme 'Tokyonight-Dark-BL-GS'
-gsettings set org.gnome.desktop.interface icon-theme 'Sweet-Purple'
+gsettings set org.gnome.desktop.interface icon-theme 'candy-icons'
 gsettings set org.gnome.desktop.interface cursor-theme 'M200'
 gsettings set org.gnome.desktop.background picture-uri "file://${HOME}/Wallpapers/wallpaper-slideshow.xml"
 gsettings set org.gnome.desktop.background picture-uri-dark "file://${HOME}/Wallpapers/wallpaper-slideshow.xml"
