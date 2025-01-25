@@ -1,32 +1,19 @@
-# Archivos del sistema
 .DS_Store
 .directory
 *~
 
-# Archivos temporales
 *.tmp
 *.temp
 tmp/
 temp/
 
-# Archivos de respaldo
 *.bak
 *.backup
 *.old
 
-# Archivos comprimidos (por si acaso alguien los descomprime localmente)
-*.zip
-*.tar.gz
-*.tar.xz
-*.gz
-*.xz
-*.7z
-*.rar
 
-# Archivos de configuración local
 .env
 .vscode/
 .idea/
 
-# Logs
 *.log

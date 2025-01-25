@@ -9,15 +9,15 @@ sudo apt install -y mate-desktop-environment mate-terminal dconf-cli mate-themes
 
 sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.themes/Dracula
 sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.icons/{cursors,default}
-sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.icons/Sweet-Purple
+sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.icons/Candy-icons
 sudo -u $REAL_USER mkdir -p ${WALLPAPER_DIR}
 
 cd "${SCRIPT_DIR}"
 tar xf M200.tar.gz -C ${REAL_HOME}/.icons/
-tar xf Sweet-Purple.tar.xz -C ${REAL_HOME}/.icons/
+tar xf candy-icons.tar.xz -C ${REAL_HOME}/.icons/
 ln -s ${REAL_HOME}/.icons/M200/index.theme ${REAL_HOME}/.icons/default/index.theme
 sudo update-alternatives --install /usr/share/icons/default/index.theme x-cursor-theme ${REAL_HOME}/.icons/M200/index.theme 20
-chown -R $REAL_USER:$REAL_USER ${REAL_HOME}/.icons/{M200,Sweet-Purple,default}
+chown -R $REAL_USER:$REAL_USER ${REAL_HOME}/.icons/{M200,Candy-icons,default}
 
 sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.config/autostart
 cat > ${REAL_HOME}/.config/autostart/dracula-theme.desktop << EOL
@@ -151,7 +151,7 @@ sleep 5
 # Configurar tema Dracula
 dconf write /org/mate/desktop/interface/gtk-theme "'Dracula'"
 dconf write /org/mate/marco/general/theme "'Dracula'"
-dconf write /org/mate/desktop/interface/icon-theme "'Sweet-Purple'"
+dconf write /org/mate/desktop/interface/icon-theme "'Candy-icons'"
 dconf write /org/mate/desktop/interface/cursor-theme "'M200'"
 
 # Configurar terminal
