@@ -72,7 +72,7 @@ cat > ${REAL_HOME}/.config/autostart/theme-setup.sh << 'EOL'
 sleep 10
 gsettings set org.gnome.shell.extensions.user-theme name 'Tokyonight-Dark-BL-GS'
 gsettings set org.gnome.desktop.interface gtk-theme 'Tokyonight-Dark-BL-GS'
-gsettings set org.gnome.desktop.interface icon-theme 'Candy-icons'
+gsettings set org.gnome.desktop.interface icon-theme 'candy-icons'
 gsettings set org.gnome.desktop.interface cursor-theme 'M200'
 gsettings set org.gnome.desktop.background picture-uri "file://${HOME}/Wallpapers/wallpaper-slideshow.xml"
 gsettings set org.gnome.desktop.background picture-uri-dark "file://${HOME}/Wallpapers/wallpaper-slideshow.xml"
@@ -81,7 +81,7 @@ EOL
 chmod +x ${REAL_HOME}/.config/autostart/theme-setup.sh
 chown $REAL_USER:$REAL_USER ${REAL_HOME}/.config/autostart/theme-setup.sh
 
-echo "Habilitando extensión User Themes..."
+echo "Enabling user-theme extension"
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com || echo "Aviso: La extensión se habilitará al reiniciar la sesión"
 
 cat > ${REAL_HOME}/.config/autostart/theme-setup.desktop << EOL
