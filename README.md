@@ -161,7 +161,8 @@ You can modify the scripts to suit your preferences:
 
 ![Debian-Gnome](/assets/debiangnome.gif)
 
-![ZSH](/assets/zshinstall.gif)
+![ZSH](/assets/zshkali.gif)
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
