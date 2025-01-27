@@ -33,7 +33,7 @@ select_icons() {
         case $icon_pack in
             "Candy Icons")
                 ICON_FILE="candy-icons.tar.xz"
-                ICON_NAME="Candy-icons"
+                ICON_NAME="candy-icons"
                 break
                 ;;
             "We10X Black")
