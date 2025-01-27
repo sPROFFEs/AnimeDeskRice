@@ -129,7 +129,7 @@ else
 fi
 
 # Additional font and icon support packages
-sudo apt install -y fonts-powerline fonts-font-awesome
+sudo apt install -y fonts-font-awesome
 
 # Install bat
 sudo apt install -y bat
