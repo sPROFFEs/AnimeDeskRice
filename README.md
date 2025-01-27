@@ -189,10 +189,10 @@ Note that this only applies to the automation scripts. All themes and assets bel
 
 ## 💭 Inspiration
 
-Inspired by the amazing Linux ricing community and the beautiful world of anime aesthetics.
+Inspired by the amazing Linux ricing community.
 
 ---
 
 <div align="center">
-Made with 💜 by [Your Name]
+Made with 💜 by pr0ff3
 </div>
