@@ -82,7 +82,7 @@ chmod +x ${REAL_HOME}/.config/autostart/theme-setup.sh
 chown $REAL_USER:$REAL_USER ${REAL_HOME}/.config/autostart/theme-setup.sh
 
 echo "Enabling user-theme extension"
-gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com || echo "Aviso: La extensión se habilitará al reiniciar la sesión"
+gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 
 cat > ${REAL_HOME}/.config/autostart/theme-setup.desktop << EOL
 [Desktop Entry]
@@ -94,7 +94,7 @@ X-GNOME-Autostart-enabled=true
 EOL
 chown $REAL_USER:$REAL_USER ${REAL_HOME}/.config/autostart/theme-setup.desktop
 
-echo "Configurando Plank..."
+echo "Setting up Plank..."
 cat > ${REAL_HOME}/.config/autostart/plank.desktop << EOL
 [Desktop Entry]
 Type=Application
