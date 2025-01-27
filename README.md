@@ -170,7 +170,7 @@ You can modify the scripts to suit your preferences:
 ### ZSH Kali
 ![ZSH](/assets/zshkali.gif)
 
-###ZSH Debian
+### ZSH Debian
 ![ZSH](/assets/zshdebian.gif)
 
 
