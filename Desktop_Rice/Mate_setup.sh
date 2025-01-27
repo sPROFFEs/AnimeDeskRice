@@ -58,7 +58,6 @@ sudo apt install -y mate-desktop-environment mate-terminal dconf-cli mate-themes
 
 sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.themes/Dracula
 sudo -u $REAL_USER mkdir -p ${REAL_HOME}/.icons/{cursors,default}
-sudo -u $REAL_USER mkdir -p "${REAL_HOME}/.icons/${ICON_NAME}"
 sudo -u $REAL_USER mkdir -p ${WALLPAPER_DIR}
 
 cd "${SCRIPT_DIR}"
