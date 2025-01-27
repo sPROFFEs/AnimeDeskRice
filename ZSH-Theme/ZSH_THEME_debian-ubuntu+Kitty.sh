@@ -130,7 +130,7 @@ else
 fi
 
 # Additional font and icon support packages
-sudo $PKG_MGR install -y fonts-powerline fonts-font-awesome
+sudo $PKG_MGR install -y fonts-font-awesome
 
 # Configure bat (handle different package names)
 if ! dpkg -l | grep -q "^ii.*batcat"; then
