@@ -29,7 +29,7 @@ select_cursors() {
 # Function to select icon pack
 select_icons() {
     echo "Select icon pack:"
-    select icon_pack in "Candy Icons" "We10X black"; do
+    select icon_pack in "Candy Icons" "We10X Black"; do
         case $icon_pack in
             "Candy Icons")
                 ICON_FILE="candy-icons.tar.xz"
