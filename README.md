@@ -39,52 +39,111 @@ Or go to releases if you only want to download Terminal or Desktop setups.
 2. Choose your rice for terminal or desktop:
 
 ### Terminal
+The script now includes an optional Kitty terminal installation. While Kitty is recommended for the best experience, it's not mandatory.
 
-#### Kali
+Terminal configuration support is being expanded. If your terminal is not currently in the supported list (GNOME, XFCE, MATE), you'll need to manually configure the JetBrainsMono Nerd font in your terminal settings.
+
+#### Kali Linux Installation
 ```bash
 cd Terminal_Rice
-chmod +x ZSH_THEME_kali.sh
-./ZSH_THEME_kali.sh
+chmod +x ZSH_THEME_kali+kitty.sh
+./ZSH_THEME_kali+kitty.sh
 ```
-#### Debian / Ubuntu
+
+#### Debian / Ubuntu Installation
 ```bash
 cd Terminal_Rice
-chmod +x ZSH_THEME_debian-ubuntu.sh
-./ZSH_THEME_debian-ubuntu.sh
+chmod +x ZSH_THEME_debian-ubuntu+kitty.sh
+./ZSH_THEME_debian-ubuntu+Kitty.sh
 ```
-### Desktop
 
-It should work for debian based distros, but I only tested it on Kali and debian.
+### Desktop Environments
+The desktop configuration scripts are designed for Debian-based distributions. Testing has been primarily conducted on Kali Linux and Debian.
 
-1. Gnome environment
+1. GNOME Environment
 ```bash
 cd Desktop_Rice
 chmod +x Gnome_setup.sh
 ./Gnome_setup.sh
 ```
-2. Mate environment
+
+2. MATE Environment
 ```bash
 cd Desktop_Rice
 chmod +x Mate_setup.sh
 ./Mate_setup.sh
 ```
-### Login manager
 
-By default, the gnome environment will install gdm3 as the login manager but it`s not enabled by default.
+Log out and log back in to apply the changes.
 
-If you want to enable it, you can do it by running the following command:
+### GNOME Customization Tools
+
+#### GNOME Debloater
+A utility is included to help remove pre-installed applications like LibreOffice or GNOME games. It also offers the option to install alternative applications such as:
+- VSCodium
+- Brave Browser
+- LibreWolf
+- Additional useful packages
+
+#### GNOME Uninstaller (Beta)
+A tool to remove the GNOME desktop environment is included but is currently in beta. It attempts to remove all main GNOME packages. If the system reboots unexpectedly during uninstallation, manually complete the cleanup with:
+
 ```bash
-sudo systemctl enable gdm3
-sudo systemctl start gdm3
+sudo apt autoremove -y && sudo apt purge
 ```
-Then you can log out and log back in to enable the login manager.
+
+⚠️ **Warning**: Ensure you have an alternative desktop environment installed before using the GNOME uninstaller. Use at your own risk.
 
 ## 🎨 Included Themes
 
+### GTK Themes
+- **Dracula**: Dark purple theme with vibrant colors
+  - Sleek, modern dark theme
+  - High contrast
+  - Popular among developers
+
 - **Tokyo Night**: Modern dark theme
+  - Soft dark color palette
+  - Minimalist design
+  - Inspired by the night skyline of Tokyo
+
 - **Catppuccin Mocha**: Clean dock theme
-- **Sweet Purple**: Sleek icon theme
-- **M200 Cursor**: Minimalist cursor theme
+  - Sophisticated color scheme
+  - Smooth, muted colors
+  - Excellent readability
+
+### Icon Packs
+- **Candy Icons**: Sleek icon theme
+  - Colorful and modern icons
+  - Consistent design language
+  - Supports multiple desktop environments
+
+- **We10X**: Windows-inspired icon set
+  - Flat design 
+  - Clean and minimalist
+  - Compatible with various Linux distributions
+
+- **Catppuccin Icons**: Matching icon theme
+  - Designed to complement Catppuccin theme
+  - Soft, pastel color palette
+  - Elegant and cohesive look
+
+### Cursor Themes
+- **M200 Cursor**: Weeabo cursor theme
+  - Anime-inspired design
+  - Smooth animations
+  - Unique aesthetic
+
+- **Catppuccin Cursors**
+  - Matching cursor theme for Catppuccin palette
+  - Subtle and elegant
+  - Consistent with Catppuccin design philosophy
+
+### Additional Customizations
+- Powerlevel10k ZSH theme
+- Nerd Fonts support
+- Custom keyboard shortcuts
+- Performance optimizations
 
 ## ⚙️ Customization
 
