@@ -155,12 +155,16 @@ You can modify the scripts to suit your preferences:
 
 ## 📸 Screenshots
 
+### Kali-Mate
 ![Kali-Mate](/assets/kalimate.gif)
 
+### Kali-Gnome
 ![Kali-Gnome](/assets/kalignome.gif)
 
+### Debian-Gnome
 ![Debian-Gnome](/assets/debiangnome.gif)
 
+### ZSH Kali
 ![ZSH](/assets/zshkali.gif)
 
 ## 🤝 Contributing
