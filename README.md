@@ -164,8 +164,15 @@ You can modify the scripts to suit your preferences:
 ### Debian-Gnome
 ![Debian-Gnome](/assets/debiangnome.gif)
 
+### Debian-Mate
+![Debian-Gnome](/assets/debianmate.gif)
+
 ### ZSH Kali
 ![ZSH](/assets/zshkali.gif)
+
+###ZSH Debian
+![ZSH](/assets/zshdebian.gif)
+
 
 ## 🤝 Contributing
 
