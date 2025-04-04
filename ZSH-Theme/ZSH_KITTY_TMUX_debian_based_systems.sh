@@ -211,19 +211,17 @@ set -g history-limit 10000
 # Don't rename windows automatically
 set -g allow-rename off
 
-# Enable mouse mode (scroll, select, etc.)
+# Enable mouse support
 set -g mouse on
 
-# Use vi-style keys in copy-mode
+# Use vi keys in copy mode
 setw -g mode-keys vi
 
-# Set prefix
-unbind C-b
-set -g prefix $TMUX_PREFIX
-bind $TMUX_PREFIX send-prefix
-
-# Enable copy to clipboard using xclip
+# Copy to clipboard using xclip when pressing y
 bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "xclip -selection clipboard -in"
+
+# Copy to clipboard automatically when selecting with the mouse
+bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "xclip -selection clipboard -in"
 
 EOT
 
