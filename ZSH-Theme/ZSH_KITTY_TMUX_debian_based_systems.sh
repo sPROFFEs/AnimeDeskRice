@@ -214,7 +214,7 @@ set -g allow-rename off
 # Enable mouse mode (scroll, select, etc.)
 set -g mouse on
 
-# Use vi-style keys in copy-mode (optional; remove if you prefer emacs-style)
+# Use vi-style keys in copy-mode
 setw -g mode-keys vi
 
 # Set prefix
@@ -222,11 +222,11 @@ unbind C-b
 set -g prefix $TMUX_PREFIX
 bind $TMUX_PREFIX send-prefix
 
-# A simple line to show that we did install a custom prefix
-# Additional custom config can go here...
-# For instance, to copy to system clipboard, you could do:
-# bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "xclip -sel clip -i"
+# Enable copy to clipboard using xclip
+bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "xclip -selection clipboard -in"
+
 EOT
+
 
     echo "Tmux installation and configuration complete."
 }
